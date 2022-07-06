@@ -1,6 +1,6 @@
 import React from "react";
 
-import { useHistory } from "react-router-dom";
+// import { useHistory } from "react-router-dom";
 import { Header } from "../atoms/layout/Header";
 
 export const DefaultLayout = (props) => {
