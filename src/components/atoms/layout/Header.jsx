@@ -4,13 +4,25 @@ import { FaTwitter } from "react-icons/fa"
 import { FaGithub } from "react-icons/fa"
 
 export const Header = () => {
+
+  // const onClickTwitter = () => {
+  //   window.location.replace("https://twitter.com/06marum")
+  // }
+
+  // const onClickGithub = () => {
+  //   window.location.replace("https://github.com/yk2906")
+  // }
+
   return (
     <SHeader>
       <SLink to="/">TOP</SLink>
       <SLink to="/about">ABOUT</SLink>
       <SLink to="/contact">CONTACT</SLink>
-      <SLink target="_blank" to="/https://twitter.com/06marum"><FaTwitter /></SLink>
-      <SLink target="_blank" to="https://github.com/yk2906"><FaGithub /></SLink>
+      {/* <SLink onClickTwitter={onClickTwitter}><FaTwitter /></SLink> */}
+      <SLink to={{ pathname: "https://twitter.com/06marum" }} target="_blank"><FaGithub /></SLink>
+      <SLink to={{ pathname: "https://github.com/yk2906" }} target="_blank"><FaTwitter /></SLink>
+      {/* <a target="_blank" href="https://twitter.com/06marum"><FaTwitter /></a>
+      <a target="_blank" href="https://github.com/yk2906"><FaGithub /></a> */}
     </SHeader>
   )
 }
