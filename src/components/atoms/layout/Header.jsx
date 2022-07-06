@@ -1,7 +1,17 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { FaTwitter } from "react-icons/fa"
-import { FaGithub } from "react-icons/fa"
+import GitHubIcon from '@mui/icons-material/GitHub';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import { makeStyles } from "@mui/material";
+
+// const useStyles = makeStyles({
+//   twitter: {
+//     color: "black",
+//     "&:hover": {
+//       color: "white"
+//     }
+//   }
+// })
 
 export const Header = () => {
 
@@ -12,17 +22,16 @@ export const Header = () => {
   // const onClickGithub = () => {
   //   window.location.replace("https://github.com/yk2906")
   // }
+  // const classes = useStyles();
+  
 
   return (
     <SHeader>
       <SLink to="/">TOP</SLink>
       <SLink to="/about">ABOUT</SLink>
       <SLink to="/contact">CONTACT</SLink>
-      {/* <SLink onClickTwitter={onClickTwitter}><FaTwitter /></SLink> */}
-      <SLink to={{ pathname: "https://twitter.com/06marum" }} target="_blank"><FaGithub /></SLink>
-      <SLink to={{ pathname: "https://github.com/yk2906" }} target="_blank"><FaTwitter /></SLink>
-      {/* <a target="_blank" href="https://twitter.com/06marum"><FaTwitter /></a>
-      <a target="_blank" href="https://github.com/yk2906"><FaGithub /></a> */}
+      <TwitterLink href="https://twitter.com/06marum" target="_blank" rel="noreferrer"><TwitterIcon style={{ "fontSize": 45, "padding": "5px 0 0 0" }}/></TwitterLink>
+      <GitHubLink href="https://github.com/yk2906" target="_blank" rel="noreferrer"><GitHubIcon style={{ "fontSize": 45, "padding": "5px 0 0 0" }}/></GitHubLink>
     </SHeader>
   )
 }
@@ -30,14 +39,15 @@ export const Header = () => {
 const SHeader = styled.header`
   background-color: #88b593;
   color: #fff;
-  padding: 20px 10px;
+  padding: 10px 10px;
   position: fixed;
-  z-index: 1;
+  z-index: 10;
   width: 100%;
   top: 0; // 上の空白無くす
   box-sizing: border-box;
   display: flex;
   justify-content: flex-end;
+  align-items: center;
   opacity: 0.8;
 `;
 
@@ -48,6 +58,27 @@ const SLink = styled(Link)`
   letter-spacing: 1px;
   color: black;
   transition: color 0.3s;
+  &:hover {
+    color: white;
+  }
+`;
+
+const TwitterLink = styled.a`
+  margin: 0 16px;
+  color: black;
+  transition: color 0.3s;
+  text-decoration: none;
+  align-self: center;
+  &:hover {
+    color: white;
+  }
+`;
+
+const GitHubLink = styled.a`
+  margin: 0 16px;
+  color: black;
+  transition: color 0.3s;
+  text-decoration: none;
   &:hover {
     color: white;
   }
