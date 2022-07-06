@@ -1,7 +1,5 @@
-import { Link } from "react-router-dom";
 import styled from "styled-components";
-import GitHubIcon from '@mui/icons-material/GitHub';
-import TwitterIcon from '@mui/icons-material/Twitter';
+
 
 // const useStyles = makeStyles({
 //   twitter: {
