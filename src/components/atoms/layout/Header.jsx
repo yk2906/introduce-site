@@ -29,6 +29,7 @@ export const Header = () => {
       <SLink to="/">TOP</SLink>
       <SLink to="/about">ABOUT</SLink>
       <SLink to="/contact">CONTACT</SLink>
+      {/* 外部リンクに遷移したいときはaタグを用いる */}
       <TwitterLink href="https://twitter.com/06marum" target="_blank" rel="noreferrer"><TwitterIcon style={{ "fontSize": 45, "padding": "5px 0 0 0" }}/></TwitterLink>
       <GitHubLink href="https://github.com/yk2906" target="_blank" rel="noreferrer"><GitHubIcon style={{ "fontSize": 45, "padding": "5px 0 0 0" }}/></GitHubLink>
     </SHeader>

@@ -9,12 +9,13 @@ import { DefaultLayout } from "../components/templates/DefaultLayout";
 export const Router = () => {
   return (
     <BrowserRouter>
-      <DefaultLayout />
-      <Routes>
-        <Route path="/" element={<Top />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
+      <DefaultLayout>
+        <Routes>
+          <Route path="/" element={<Top />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+      </DefaultLayout>
     </BrowserRouter>
   )
 }

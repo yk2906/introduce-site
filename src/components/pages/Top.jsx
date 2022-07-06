@@ -7,21 +7,51 @@ export const Top = () => {
   // const history = useHistory()
 
   return (
-    <SContainer>
+    <SSection>
       <STitle>Welcome to My Portfolio Site!!!</STitle>
       <br />
-      <p>「巻き舌宇宙で有名な紫ミミズの剥製は
-ハラキリ岩の上で音叉が生まばたきするといいらしいぞ。要ハサミだ。61」
-      </p>
       <br />
-      <br />
-      <SSubTitle>SKILLS</SSubTitle>
-    </SContainer>
+      <SSubTitle>Profile</SSubTitle>
+      <SContainer>
+        <p>こんにちは。小浜佑斗と申します。現在25歳の都内SES企業に所属しております。</p>
+        <p>出身地は大阪府です。2020年3月に近畿大学を卒業しました。</p>
+        <p>主にインフラ分野メインでスキルの研鑽を行っています。</p>
+      </SContainer>
+      <SSubTitle>Skill</SSubTitle>
+      <SContainer>
+        <p>日商簿記検定2級</p>
+        <p>Microsoft Office Specialist Excel 2016</p>
+        <p>TOEIC IPテスト 615点</p>
+        <p>シスコ技術者認定　CCNA（Cisco Certified Network Associate）</p>
+        <p>Linux技術者認定試験(LPIC) - レベル1</p>
+        <p>AWS Certified Cloud Practitioner</p>
+        <p>AWS Certified Solutions Architect – Associate</p>
+      </SContainer>
+      <SSubTitle>Hobby</SSubTitle>
+      <SContainer>
+        <p>散歩</p>
+        <p>読書（ジャンル問わないが、ビジネス本やハウツー本を読むことが多い）</p>
+      </SContainer>
+    </SSection>
   )
 }
 
-const SContainer = styled.div`
+const SSection = styled.section`
   text-align: center;
+  display: flex;
+  flex-direction: column;
+`;
+
+const SContainer = styled.div`
+  padding: 20px;
+  background-color: #3d3c3c;
+  text-align: left;
+  width: 700px;
+  align-self: center;
+  box-shadow: 5px 10px 20px rgba(0, 0, 0, 0, 25);
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-bottom: 150px;
 `;
 
 const STitle = styled.h1`

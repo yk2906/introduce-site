@@ -1,4 +1,5 @@
 import React from "react";
+import { Footer } from "../atoms/layout/Footer";
 
 // import { useHistory } from "react-router-dom";
 import { Header } from "../atoms/layout/Header";
@@ -10,7 +11,8 @@ export const DefaultLayout = (props) => {
   return (
     <>
       <Header />
-      {children}
+        {children}
+      <Footer />
     </>
   )
 }
