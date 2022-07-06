@@ -9,8 +9,8 @@ export const Header = () => {
       <SLink to="/">TOP</SLink>
       <SLink to="/about">ABOUT</SLink>
       <SLink to="/contact">CONTACT</SLink>
-      <SLink to="https://twitter.com/06marum"><FaTwitter /></SLink>
-      <SLink to="https://github.com/yk2906"><FaGithub /></SLink>
+      <SLink target="_blank" to="/https://twitter.com/06marum"><FaTwitter /></SLink>
+      <SLink target="_blank" to="https://github.com/yk2906"><FaGithub /></SLink>
     </SHeader>
   )
 }
