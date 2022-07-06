@@ -11,7 +11,7 @@ export const Top = () => {
       <STitle>Welcome to My Portfolio Site!!!</STitle>
       <br />
       <p>「巻き舌宇宙で有名な紫ミミズの剥製は
-ハラキリ岩の上で音叉が生まばたきするといいらしいぞ。要ハサミだ。61！」
+ハラキリ岩の上で音叉が生まばたきするといいらしいぞ。要ハサミだ。61」
       </p>
       <br />
       <br />
