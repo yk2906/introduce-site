@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { ContactForm } from "../molecules/ContactForm";
 
 // import { useHistory } from "react-router-dom";
 
@@ -14,6 +15,9 @@ export const Contact = () => {
         <p>
           お問い合わせ等ございましたら、以下のフォームから入力お願いします。
         </p>
+      </SContainer>
+      <SContainer>
+        <ContactForm />
       </SContainer>
     </SSection>
   )

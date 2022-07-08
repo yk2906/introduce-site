@@ -1,12 +1,13 @@
-import styled from "styled-components";
+import Button from '@mui/material/Button';
 
-export const Button = styled.button`
-  color: #fff;
-  border-radius: 10px;
-  padding: 6px 24px;
-  background-color: black;
-  &:hover {
-    cursor: pointer;
-    opacity: 0.8;
-  }
-`
+export const FormButton = (props) => {
+  const {children, endIcon, color, type, value, disabled} = props;
+
+  return (
+    <>
+      <Button variant="outlined" endIcon={endIcon} color={color} type={type} value={value} disabled={disabled}>
+        {children}
+      </Button>
+    </>
+  )
+}
