@@ -36,4 +36,4 @@ const SContainer = styled.div`
 const SSubTitle = styled.h2`
   font-size: 5.0rem;
   margin: 150px 0 40px;
-`
+`;
